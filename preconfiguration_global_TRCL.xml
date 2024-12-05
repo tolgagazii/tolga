@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<TRCL. n="TRCL" a="static">
+  <Basic. n="basic_setting" a="static">
+    <oui t="string" ml="8" v="D0542D" fri="" dburi="*DEL*"/>
+    <ManufacturerOUI t="string" ml="12" v="" fri="MACAddress" dburi="InternetGatewayDevice.DeviceInfo.ManufacturerOUI"/>
+    <ProvisioningCode t="string" ml="12" v="ALCL" dburi="InternetGatewayDevice.DeviceInfo.ProvisioningCode"/>
+    <DoSProtectionCfg t="string" ml="12" v="true" dburi="InternetGatewayDevice.X_ASB_COM_DoSProtectionEnableCfg.Enable"/>
+    <ONUType t="string" ml="12" v="HGU" dburi="InternetGatewayDevice.X_ASB_COM_ONUType.type"/>
+    <VOIPCfgType t="string" ml="12" v="TR069" dburi="InternetGatewayDevice.X_ASB_COM_VOIPCfgType.type"/>
+    <Language t="string" ml="12" v="tur" dburi="InternetGatewayDevice.X_ASB_COM_Language"/>
+    <ManagementIdleDisconnectTime rw="RW" t="unsignedInt" v="300" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.ManagementIdleDisconnectTime"/>
+    <IPProVerMode t="string" max="3" min="1" v="3" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_IPProtocolVersion.Mode"/>
+    <WlanUserMaximum rw="RW" t="unsignedInt" v="32" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_WlanUserMaximum"/>
+    <HttpDisabled rw="RW" t="boolean" v="false" dburi="InternetGatewayDevice.X_ALU-COM_LanAccessCfg.HttpDisabled"/>
+    <HttpsDisabled rw="RW" t="boolean" v="false" dburi="InternetGatewayDevice.X_ALU-COM_LanAccessCfg.HttpsDisabled"/>
+    <TelnetEnable rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.TelnetEnable"/>
+    <TelnetDisabled rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.X_ALU-COM_LanAccessCfg.TelnetDisabled"/>
+    <SshDisabled rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.X_ALU-COM_LanAccessCfg.SshDisabled"/>
+    <IcmpEchoReqDisabled rw="RW" t="boolean" v="false" dburi="WANPPPConnection.%d.X_ALU-COM_WanAccessCfg.IcmpEchoReqDisabled"/>
+    <UPnP rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_UPNP.Enable"/>
+    <WanPortMappingDisable rw="RW" t="unsignedInt" v="4" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_WanPortMappingDisable"/>
+    <TransferPPPOEtoIPOEHeader t="string" ml="12" v="true" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_TransferPPPOEtoIPOEHeader"/>
+    <PassRuleEnable rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.Enable"/>
+    <PassRuleIllegalCharRule ml="256" t="string" v="[^]!#+,/@_:=a-zA-Z0-9-]+" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.IllegalCharRule"/>
+    <PassRuleIllegalCharPrompt ml="256" t="string" v="Password can only contain numbers,letters and special character ]!#+,-/@_:=" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.IllegalCharPrompt"/>
+    <PassRuleMiniClassRule ml="256" t="string" v="(^[a-zA-Z0-9]+$)|(^[]!#+,/@_:=a-zA-Z-]+$)|(^[]!#+,/@_:=0-9-]+$)" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.MiniClassRule"/>
+    <PassRuleMiniClassPrompt ml="256" t="string" v="Password must contain at least 1 alphabet, 1 number, and 1 special character" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.MiniClassPrompt"/>
+    <PassRuleSameCharRule ml="256" t="string" v="([]!#+,/@_:=a-zA-Z0-9-])\1{7}" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.PasswordRule.SameCharRule"/>
+    <FwEnable rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.Firewall.X_ASB_COM_Enable"/>
+    <FwConfig t="string" ml="256" v="Low" dburi="InternetGatewayDevice.Firewall.Config"/>
+    <TelnetPort t="int" v="2323" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ServiceManage.TelnetPort"/>
+    <X_ASB_COM_WlanRegionWithHighPriority dv="false" rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_WlanRegionWithHighPriority"/>
+    <WlanRegion t="string" ml="12" v="tr" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_WlanRegion"/>
+    <IGMPCfgFromTR069 t="boolean" v="true" dburi="InternetGatewayDevice.X_ASB_COM_IGMPCfg.TR069ConfigEnable"/>
+    <X_ASB_COM_PPPConnectionDelay t="int" ml="12" v="30" dburi="InternetGatewayDevice.WANDevice.1.X_ASB_COM_PPPConnectionDelay"/>
+  </Basic.>
+  <DNS. n="dns" a="static">
+    <DomainName t="string" ml="64" v="dsldevice.lan" dburi="InternetGatewayDevice.X_ASB_COM_AppCfg.DnsProxyCfg.X_ASB_STATIC_DNS.DnsInfo.1.domainName"/>
+    <DomainAddr t="string" ml="64" v="192.168.1.1" dburi="InternetGatewayDevice.X_ASB_COM_AppCfg.DnsProxyCfg.X_ASB_STATIC_DNS.DnsInfo.1.domainAddr"/>
+  </DNS.>
+  <TR069. n="tr069">
+    <URL v="http://acs.superonline.net:8015/cwmpWeb/WGCPEMgt" dburi="InternetGatewayDevice.ManagementServer.URL"/>
+    <Username v="superonlineacs" dburi="InternetGatewayDevice.ManagementServer.Username"/>
+    <Password v="superonlineacs" dburi="InternetGatewayDevice.ManagementServer.Password"/>
+    <ConnectionRequestUsername t="string" ml="12" v="superonlineacs" dburi="InternetGatewayDevice.ManagementServer.ConnectionRequestUsername"/>
+    <ConnectionRequestPassword v="superonlineacs" dburi="InternetGatewayDevice.ManagementServer.ConnectionRequestPassword"/>
+    <PeriodicInformInterval t="string" ml="12" v="86400" dburi="InternetGatewayDevice.ManagementServer.PeriodicInformInterval"/>
+    <ConnectionRequestURL t="string" ml="12" v="http://123.45.67.89:7547/" dburi="InternetGatewayDevice.ManagementServer.ConnectionRequestURL"/>
+  </TR069.>
+  <NTP. n="ntp" a="static">
+    <Enable t="string" ml="12" v="true" dburi="InternetGatewayDevice.Time.Enable"/>
+    <NTPServer1 t="string" ml="24" v="cpentp.superonline.net" dburi="InternetGatewayDevice.Time.NTPServer1"/>
+    <NTPServer2 t="string" ml="24" v="" dburi="InternetGatewayDevice.Time.NTPServer2"/>
+    <LocalTimeZone t="string" ml="12" v="+03:00" dburi="InternetGatewayDevice.Time.LocalTimeZone"/>
+    <LocalTimeZoneName t="string" ml="24" v="Istanbul" dburi="InternetGatewayDevice.Time.LocalTimeZoneName"/>
+  </NTP.>
+  <EthPort. n="ethport_mode" a="static">
+    <EthPort1 t="string" ml="32" v="true" dburi="InternetGatewayDevice.X_ASB_COM_EthPort.EthPort.1.isTr069Domain"/>
+    <EthPort2 t="string" ml="32" v="true" dburi="InternetGatewayDevice.X_ASB_COM_EthPort.EthPort.2.isTr069Domain"/>
+    <EthPort3 t="string" ml="32" v="true" dburi="InternetGatewayDevice.X_ASB_COM_EthPort.EthPort.3.isTr069Domain"/>
+    <EthPort4 t="string" ml="32" v="true" dburi="InternetGatewayDevice.X_ASB_COM_EthPort.EthPort.4.isTr069Domain"/>
+  </EthPort.>
+  <LAN. n="ddns" a="static">
+    <DHCPServerEnable rw="RW" t="boolean" v="true" dburi="InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.DHCPServerEnable"/>
+    <MinAddress t="string" ml="32" v="192.168.1.2" dburi="InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.MinAddress"/>
+    <MaxAddress t="string" ml="32" v="192.168.1.254" dburi="InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.MaxAddress"/>
+    <DHCPLeaseTime t="string" ml="32" v="86400" dburi="InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.DHCPLeaseTime"/>
+    <IPInterfaceIPAddress t="string" ml="32" v="192.168.1.1" dburi="InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.IPInterface.1.IPInterfaceIPAddress"/>
+  </LAN.>
+  <DMZALG. n="dmzalg" a="static">
+    <DMZ t="string" ml="2" v="1" dburi="InternetGatewayDevice.X_ASB_COM_PreConfig.X_ASB_COM_DMZ"/>
+    <FTPEnable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.FTPEnable"/>
+    <H323Enable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.H323Enable"/>
+    <TFTPEnable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.TFTPEnable"/>
+    <L2TPEnable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.L2TPEnable"/>
+    <IPSECEnable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.IPSECEnable"/>
+    <RTSPEnable t="string" ml="12" v="true" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.RTSPEnable"/>
+    <SIPEnable t="string" ml="12" v="true" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.SIPEnable"/>
+    <PPTPEnable t="string" ml="12" v="false" dburi="InternetGatewayDevice.DeviceInfo.X_CT-COM_ALGAbility.PPTPEnable"/>
+  </DMZALG.>
+  <AccountInfo. n="accountinfo" a="static">
+    <WebAccountUser t="string" ml="64" v="Root" dburi="InternetGatewayDevice.X_Authentication.WebAccount.UserName"/>
+    <WebAccountPwd t="string" ml="64" v="" fri="genpwd_longpasswd" dburi="InternetGatewayDevice.X_Authentication.WebAccount.Password"/>
+    <WebAccountPresetPwd t="string" ml="64" v="" fri="genpwd_longpasswd" dburi="InternetGatewayDevice.X_Authentication.WebAccount.PresetPassword"/>
+    <AccountEnable t="string" v="true" dburi="InternetGatewayDevice.X_Authentication.Account.Enable"/>
+    <AccountUser t="string" ml="64" v="admin" dburi="InternetGatewayDevice.X_Authentication.Account.UserName"/>
+    <AccountPwd t="string" ml="64" v="superonline" dburi="InternetGatewayDevice.X_Authentication.Account.Password" WEBHotreset="true"/>
+    <AccountModifyPassword t="string" ml="64" v="NeedModify" dburi="InternetGatewayDevice.X_Authentication.Account.ModifyPassword"/>
+  </AccountInfo.>
+  <WAN_1. n="WAN_1" a="dynamic" dburi="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.%d." dtype="PPP">
+    <Enable t="string" ml="12" v="true" dburi="WANPPPConnection.%d.Enable"/>
+    <ConnectionType t="string" ml="24" v="IP_Routed" dburi="WANPPPConnection.%d.ConnectionType"/>
+    <ServiceList t="string" ml="64" v="VOIP,TR069,INTERNET" dburi="WANPPPConnection.%d.X_CT-COM_ServiceList"/>
+    <NATEnabled t="string" ml="12" v="true" dburi="WANPPPConnection.%d.NATEnabled"/>
+    <GponLinkMode t="string" ml="12" v="2" dburi="X_CT-COM_WANGponLinkConfig.Mode"/>
+    <VLANIDMark t="string" ml="12" v="100" dburi="X_CT-COM_WANGponLinkConfig.VLANIDMark"/>
+    <P8021pMark t="string" ml="12" v="1" dburi="X_CT-COM_WANGponLinkConfig.P_802-1pMark"/>
+    <PPPUsername t="string" ml="64" v="fiber@fiber" dburi="WANPPPConnection.%d.Username"/>
+    <PPPPassword t="string" ml="12" v="fiber" dburi="WANPPPConnection.%d.Password"/>
+    <KeepAliveTime t="int" ml="12" v="30" dburi="WANPPPConnection.%d.X_ASB_COM_KeepAliveTime"/>
+    <IcmpEchoReqTrusted rw="RW" t="boolean" v="true" dburi="WANPPPConnection.%d.X_ALU-COM_WanAccessCfg.IcmpEchoReqTrusted"/>
+    <TrustedNetworkEnable rw="RW" t="boolean" v="true" dburi="WANPPPConnection.%d.X_ALU-COM_WanAccessCfg.TrustedNetworkEnable"/>
+  </WAN_1.>
+  <WAN_2. n="WAN_2" a="dynamic" dburi="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.%d." dtype="IP">
+    <Enable t="string" ml="12" v="false" dburi="WANIPConnection.%d.Enable"/>
+    <ConnectionType t="string" ml="24" v="IP_Routed" dburi="WANIPConnection.%d.ConnectionType"/>
+    <ServiceList t="string" ml="64" v="OTHER" dburi="WANIPConnection.%d.X_CT-COM_ServiceList"/>
+    <NATEnabled t="string" ml="12" v="true" dburi="WANIPConnection.%d.NATEnabled"/>
+    <InterfaceMtu max="1990" min="1" rw="RW" t="unsignedInt" v="1492" dburi="WANIPConnection.%d.InterfaceMtu"/>
+    <GponLinkMode t="string" ml="12" v="2" dburi="X_CT-COM_WANGponLinkConfig.Mode"/>
+    <VLANIDMark t="string" ml="12" v="103" dburi="X_CT-COM_WANGponLinkConfig.VLANIDMark"/>
+    <P8021pMark t="string" ml="12" v="4" dburi="X_CT-COM_WANGponLinkConfig.P_802-1pMark"/>
+    <SentDHCPOption_enable rw="RW" t="boolean" v="false" dburi="WANIPConnection.1.DHCPClient.SentDHCPOption.1.Enable"/>
+    <PTMLink_X_ALU-COM_Mode dv="2" max="2" min="0" rw="RW" t="unsignedInt" v="2" dburi="WANPTMLinkConfig.X_ALU-COM_Mode"/>
+    <PTMLink_X_ALU-COM_VLANIDMark dv="0" rw="RW" t="unsignedInt" v="103" dburi="WANPTMLinkConfig.X_ALU-COM_VLANIDMark"/>
+    <PTMLink_X_ALU-COM_802-1pMark dv="0" rw="RW" t="unsignedInt" v="4" dburi="WANPTMLinkConfig.X_ALU-COM_802-1pMark"/>
+    <HttpDisabled rw="RW" t="boolean" v="true" dburi="WANIPConnection.%d.X_ALU-COM_WanAccessCfg.HttpDisabled"/>
+    <TelnetDisabled rw="RW" t="boolean" v="true" dburi="WANIPConnection.%d.X_ALU-COM_WanAccessCfg.TelnetDisabled"/>
+    <Tr69Disabled rw="RW" t="boolean" v="true" dburi="WANIPConnection.%d.X_ALU-COM_WanAccessCfg.Tr69Disabled"/>
+    <IcmpEchoReqTrusted rw="RW" t="boolean" v="true" dburi="WANIPConnection.%d.X_ALU-COM_WanAccessCfg.IcmpEchoReqTrusted"/>
+    <TrustedNetworkEnable rw="RW" t="boolean" v="true" dburi="WANIPConnection.%d.X_ALU-COM_WanAccessCfg.TrustedNetworkEnable"/>
+  </WAN_2.>
+  <WLAN_1. n="WLAN_1" a="static">
+    <Enable t="string" ml="12" v="true" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.Enable"/>
+    <Standard t="string" ml="12" v="b,g,n" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.Standard"/>
+    <Powerlevel t="string" ml="4" v="100" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.TransmitPower"/>
+    <ChannelWidth dv="0" rw="RW" t="unsignedInt" v="2" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_CT-COM_ChannelWidth"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M" fri="genssidfmt" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.SSID"/>
+    <BeaconType t="string" ml="12" v="WPAand11i" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.BeaconType" WiFiHotreset="true"/>
+    <WPAEncryptionModes t="string" ml="32" v="TKIPandAESEncryption" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.WPAEncryptionModes" WiFiHotreset="true"/>
+    <WPAAuthenticationMode dv="PSKAuthentication" ml="32" rw="RW" t="string" v="PSKAuthentication" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.WPAAuthenticationMode" WiFiHotreset="true"/>
+    <PreSharedKey t="string" ml="64" v="" fri="genpwd_longpasswd" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.PreSharedKey.1.PreSharedKey" WiFiHotreset="true"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_1.>
+  <WLAN_2. n="WLAN_2" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.%d." dtype="WLAN">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-2" fri="genssidfmt" dburi="SSID"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_2.>
+  <WLAN_3. n="WLAN_3" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.%d." dtype="WLAN">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-3" fri="genssidfmt" dburi="SSID"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_3.>
+  <WLAN_4. n="WLAN_4" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.%d." dtype="WLAN">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-4" fri="genssidfmt" dburi="SSID"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_4.>
+  <WLAN_5. n="WLAN_5" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.5.">
+    <Enable t="string" ml="12" v="true" dburi="Enable"/>
+    <Standard t="string" ml="12" v="a,n,ac" dburi="Standard"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M" fri="genssidfmt" dburi="SSID"/>
+    <Powerlevel t="string" ml="4" v="100" dburi="TransmitPower"/>
+    <BeaconType t="string" ml="12" v="WPAand11i" dburi="BeaconType" WiFiHotreset="true"/>
+    <WPAEncryptionModes t="string" ml="32" v="TKIPandAESEncryption" dburi="WPAEncryptionModes" WiFiHotreset="true"/>
+    <WPAAuthenticationMode dv="PSKAuthentication" ml="32" rw="RW" t="string" v="PSKAuthentication" dburi="WPAAuthenticationMode" WiFiHotreset="true"/>
+    <PreSharedKey t="string" ml="64" v="" fri="genpwd_longpasswd" dburi="PreSharedKey.1.PreSharedKey" WiFiHotreset="true"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_5.>
+  <WLAN_6. n="WLAN_6" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.6.">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <Standard t="string" ml="12" v="a,n,ac" dburi="Standard"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-2" fri="genssidfmt" dburi="SSID"/>
+    <Powerlevel t="string" ml="4" v="100" dburi="TransmitPower"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_6.>
+  <WLAN_7. n="WLAN_7" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.7.">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <Standard t="string" ml="12" v="a,n,ac" dburi="Standard"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-3" fri="genssidfmt" dburi="SSID"/>
+    <Powerlevel t="string" ml="4" v="100" dburi="TransmitPower"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_7.>
+  <WLAN_8. n="WLAN_8" a="dynamic" dburi="InternetGatewayDevice.LANDevice.1.WLANConfiguration.8.">
+    <Enable t="string" ml="12" v="false" dburi="Enable"/>
+    <Standard t="string" ml="12" v="a,n,ac" dburi="Standard"/>
+    <ssidName t="string" ml="64" v="SUPERONLINE_Wi-Fi_%4M-4" fri="genssidfmt" dburi="SSID"/>
+    <Powerlevel t="string" ml="4" v="100" dburi="TransmitPower"/>
+    <PreSharedKey t="string" ml="64" v="12345678" dburi="PreSharedKey.1.PreSharedKey"/>
+    <X_ASB_COM_BaseCfg_GlobalMaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_BaseCfg_GlobalMaxAssoc"/>
+    <X_ASB_COM_VirtualIfCfg_MaxAssoc dv="40" rw="RW" min="0" max="40" t="int" v="40" dburi="X_ASB_COM_VirtualIfCfg_MaxAssoc"/>
+  </WLAN_8.>
+  <TrustedNetwork_1. n="TrustedNetwork_1" a="dynamic" dburi="InternetGatewayDevice.TrustedNetwork.1.">
+    <SourceIPRangeStart dv="" ml="45" rw="RW" t="string" v="85.29.0.1" dburi="SourceIPRangeStart"/>
+    <SourceIPRangeEnd dv="" ml="45" rw="RW" t="string" v="85.29.63.254" dburi="SourceIPRangeEnd"/>
+  </TrustedNetwork_1.>
+  <TrustedNetwork_2. n="TrustedNetwork_1" a="dynamic" dburi="InternetGatewayDevice.TrustedNetwork.2.">
+    <SourceIPRangeStart dv="" ml="45" rw="RW" t="string" v="10.31.0.1" dburi="SourceIPRangeStart"/>
+    <SourceIPRangeEnd dv="" ml="45" rw="RW" t="string" v="10.31.255.254" dburi="SourceIPRangeEnd"/>
+  </TrustedNetwork_2.>
+  <TrustedNetwork_3. n="TrustedNetwork_1" a="dynamic" dburi="InternetGatewayDevice.TrustedNetwork.3.">
+    <SourceIPRangeStart dv="" ml="45" rw="RW" t="string" v="85.29.13.1" dburi="SourceIPRangeStart"/>
+    <SourceIPRangeEnd dv="" ml="45" rw="RW" t="string" v="85.29.13.30" dburi="SourceIPRangeEnd"/>
+  </TrustedNetwork_3.>
+  <TrustedNetwork_4. n="TrustedNetwork_1" a="dynamic" dburi="InternetGatewayDevice.TrustedNetwork.4.">
+    <SourceIPRangeStart dv="" ml="45" rw="RW" t="string" v="85.29.35.37" dburi="SourceIPRangeStart"/>
+    <SourceIPRangeEnd dv="" ml="45" rw="RW" t="string" v="85.29.35.38" dburi="SourceIPRangeEnd"/>
+  </TrustedNetwork_4.>
+  <Forwarding_1. n="Forwarding_1" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.1.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="172.31.128.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.224.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_1.>
+  <Forwarding_2. n="Forwarding_2" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.2.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="176.43.0.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.255.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_2.>
+  <Forwarding_3. n="Forwarding_3" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.3.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="10.31.0.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.0.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_3.>
+  <Forwarding_4. n="Forwarding_4" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.4.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="176.235.0.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.240.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_4.>
+  <Forwarding_5. n="Forwarding_5" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.5.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="85.153.240.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.240.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_5.>
+  <Forwarding_6. n="Forwarding_6" a="dynamic" dburi="InternetGatewayDevice.Layer3Forwarding.Forwarding.6.">
+    <DestIPAddress dv="" ml="32" rw="RW" t="string" v="10.63.0.0" dburi="DestIPAddress"/>
+    <DestSubnetMask dv="" ml="32" rw="RW" t="string" v="255.255.240.0" dburi="DestSubnetMask"/>
+    <Interface dv="" ml="256" rw="RW" t="string" v="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection.1" dburi="Interface"/>
+    <GatewayIPAddress dv="" ml="32" rw="RW" t="string" v="0.0.0.0" dburi="GatewayIPAddress"/>
+  </Forwarding_6.>
+</TRCL.>
